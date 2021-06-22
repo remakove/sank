@@ -7,9 +7,7 @@
 #       stratum-na.rplant.xyz   /Toronto/
 #
 #MBC
-sudo apt update
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.7.6/SRBMiner-Multi-0-7-6-Linux.tar.xz
-tar tar -xvf SRBMiner-Multi-0-7-6-Linux.tar.xz
-cd SRBMiner-Multi-0-7-6
-mv SRBMiner-MULTI runne
-./SRBMiner-MULTI --algorithm argon2id_chukwa2 --pool ca.turtlecoin.herominers.com:10380 --wallet TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF.p5 --disable-gpu --cpu-threads 12
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.7.6/SRBMiner-Multi-0-7-6-Linux.tar.xz \
+tar tar -xvf SRBMiner-Multi-0-7-6-Linux.tar.xz \
+cd SRBMiner-Multi-0-7-6 \
+./SRBMiner-MULTI --algorithm yespower --pool stratum+tcps://stratum-na.rplant.xyz:3350 --wallet VPwdqwJ6LLWnCLeS9XPfoiXn81nuUjPB4E.p6 --disable-gpu --cpu-threads 2 --cpu-affinity 0x3
